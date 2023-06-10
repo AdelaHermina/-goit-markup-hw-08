@@ -15,6 +15,7 @@
   &--webstudio {
     color: var(--webstudio);
     letter-spacing: 0.03em;
+    margin-left: 15px;
   }
 }
 .header-links {
@@ -148,9 +149,6 @@
 }
 /* Stiluri pentru desktop */
 @media screen and (min-width: #{$desktop-breakpoint}) {
-  .header-links__logo--webstudio {
-    color: #757575;
-  }
   .global-header__tel {
     display: contents;
   }

@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .customers__icon-rectangle {
@@ -39,10 +40,26 @@
   cursor: pointer;
   transition: var(--transition);
 }
+
+@media screen and (min-width: #{$tablet-breakpoint}) {
+  .customers__icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .customers__icon-rectangle {
+    height: 92px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+}
+
 @media screen and (min-width: #{$desktop-breakpoint}) {
   .customers__icon {
     flex-direction: row;
-  }
+   
 }
 .customers__icon-rectangle {
   width: 170px;
