@@ -1,0 +1,86 @@
+.effective-solutions {
+  background: rgba(47, 48, 58, 0.4);
+  color: #ffffff;
+  font-weight: 900;
+  font-style: normal;
+
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  &__background {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      image-set(
+        "../images/studio-image-m.jpg" 1x,
+        "../images/studio-image-m@2.jpg" 2x
+      );
+  }
+
+  .effective-solutions__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    background: #2196f3;
+    width: 200px;
+    height: 50px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 30px;
+
+    &:hover,
+    &:focus {
+      background: #2196f3;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+  }
+}
+/* Stil doar pentru tableta */
+@media screen and (min-width: $tablet-breakpoint) {
+  .effective-solutions {
+    font-size: 44px;
+    line-height: 1.36;
+
+    &__background {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.7) 100%
+        ),
+        image-set(
+          "../images/studio-image-t.jpg" 1x,
+          "../images/studio-image-t@2.jpg" 2x
+        );
+    }
+  }
+  .effective-solutions__button {
+    padding: 6px 22px;
+  }
+}
+
+/* Stil doar pentru Desktop */
+@media screen and (min-width: $desktop-breakpoint) {
+  .effective-solutions {
+    font-size: 44px;
+    line-height: 60px;
+
+    &__background {
+      background-image: image-set(
+          "../images/studio-image-d.jpg" 1x,
+          "../images/studio-image-d@2.jpg" 2x
+        ),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    }
+  }
+}

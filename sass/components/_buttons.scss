@@ -1,0 +1,115 @@
+.portfolio__buttons {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  height: 38px;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  padding: 6px 22px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  &__design {
+    background-color: #f5f4fa;
+    border: 1px solid #f5f4fa;
+    color: #212121;
+    width: auto;
+    margin-right: 8px;
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+      border: 1px solid #2196f3;
+      color: #2196f3;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      color: #ffffff;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+  }
+}
+.footer-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-left: 43px;
+  cursor: pointer;
+  text-decoration: solid;
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 25px;
+    margin-top: 3px;
+  }
+}
+.modal__close-btn {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    color: #2196f3;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+}
+.modal__submit-btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 80px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  max-width: 200px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+}
+.button--toggle-menu {
+  position: absolute;
+  right: 33px;
+  padding: 0;
+  width: 24px;
+  border: none;
+}
