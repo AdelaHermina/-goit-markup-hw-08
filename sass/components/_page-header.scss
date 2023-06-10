@@ -16,6 +16,9 @@
     color: var(--webstudio);
     letter-spacing: 0.03em;
     margin-left: 15px;
+    span {
+      color: #212121;
+    }
   }
 }
 .header-links {
@@ -104,7 +107,6 @@
     margin-left: -215px;
     white-space: nowrap;
     display: flex;
-    color: #757575;
   }
   .global-header__mail {
     color: #757575;
