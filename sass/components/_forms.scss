@@ -1,8 +1,12 @@
 .form-footer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 16px 44px 30px 44px;
   flex-direction: column;
+}
+.form-footer__icon {
+  display: flex;
+  flex-direction: row;
 }
 @media screen and (min-width: #{$tablet-breakpoint}) {
   .form-footer {
