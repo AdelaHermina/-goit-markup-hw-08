@@ -2,6 +2,7 @@
   color: #ffffff;
   background: var(--footer-page-background);
   padding-top: 60px;
+  height: 604px;
 
   a {
     font-style: normal;
@@ -69,5 +70,15 @@
       color: #ffffff;
       background-color: #2196f3;
     }
+  }
+}
+@media screen and (min-width: #{$tablet-breakpoint}) {
+  .global-footer {
+    height: 464px;
+  }
+}
+@media screen and (min-width: #{$desktop-breakpoint}) {
+  .global-footer {
+    height: 251px;
   }
 }

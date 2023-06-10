@@ -5,13 +5,16 @@
 .customers__icon {
   display: flex;
   text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 15px;
 }
 
 .customers__icon-rectangle {
-  width: 170px;
+  width: 210px;
   height: 92px;
-  margin-right: 30px;
-  margin-bottom: 94px;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -35,4 +38,17 @@
   color: #2196f3;
   cursor: pointer;
   transition: var(--transition);
+}
+@media screen and (min-width: #{$desktop-breakpoint}) {
+  .customers__icon {
+    flex-direction: row;
+  }
+}
+.customers__icon-rectangle {
+  width: 170px;
+  height: 92px;
+
+  margin-bottom: 94px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }

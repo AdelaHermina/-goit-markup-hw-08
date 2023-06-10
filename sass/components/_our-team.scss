@@ -1,5 +1,10 @@
 .our-team {
   background: #f5f4fa;
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .our-team__list {
@@ -7,10 +12,7 @@
   margin-left: auto;
   flex-direction: column;
   gap: 30px;
-
-  li + li {
-    margin-left: 30px;
-  }
+  margin-left: 15px;
 }
 
 .our-team__border {
@@ -19,53 +21,64 @@
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   flex-basis: calc((100% - 72px) / 4);
-  margin-right: 30px;
+
   text-align: center;
-
-  .our-team__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19x;
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: 0.03em;
+}
+@media screen and (min-width: #{$tablet-breakpoint}) {
+  .our-team__border {
+    margin-right: 30px;
   }
-
-  .our-team__name--p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 30px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  .our-team__list {
+    li + li {
+      margin-left: 30px;
+    }
   }
+}
+.our-team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19x;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
-  .our-team__icons {
+.our-team__name--p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team__icons {
+  display: flex;
+  text-align: center;
+  align-items: end;
+  padding-left: 65px;
+  margin: 16px 44px 30px 44px;
+
+  .icon-social {
     display: flex;
     align-items: center;
-    margin: 16px 44px 30px 44px;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
 
-    .icon-social {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 44px;
-      width: 44px;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      fill: #ffffff;
+      background-color: #2196f3;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: var(--transition);
+    }
 
-      &:hover,
-      &:focus {
-        color: #ffffff;
-        fill: #ffffff;
-        background-color: #2196f3;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: var(--transition);
-      }
-
-      svg {
-        height: 20px;
-        width: 20px;
-      }
+    svg {
+      height: 20px;
+      width: 20px;
     }
   }
 }
@@ -92,5 +105,16 @@
   .our-team__list {
     flex-direction: row;
     gap: 0;
+  }
+  .our-team__icons {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: #{$tablet-breakpoint}) {
+  .our-team {
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 }
