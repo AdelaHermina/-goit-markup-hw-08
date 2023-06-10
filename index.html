@@ -192,12 +192,31 @@
 
           <ul class="our-team__list">
             <li class="our-team__border">
-              <img
-                src="./images/Christopher.jpg"
-                alt="Christopher"
-                height="260"
-                width="270"
-              />
+             <!-- Desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    images/christopher-d,
+                    images/christopher-d@2x.jpg 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/christopher-t,
+                    images/christopher-t@2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    images/christopher-m,
+                    images/christopher-m@2x.jpg 2x
+                  "
+                />
+                <img src="./images/christopher-m.jpg" />
+              </picture>
 
               <h3 class="our-team__name">Christopher Walker</h3>
               <p class="our-team__name--p">Product Designer</p>

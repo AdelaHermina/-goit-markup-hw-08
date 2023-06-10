@@ -1,7 +1,10 @@
 .what-we-do {
   background: var(--text-header-color);
-  margin-top: 30px;
+
   display: flex;
+  h2 {
+    display: none;
+  }
 }
 .rectangle {
   max-width: 450px;
@@ -39,6 +42,11 @@ p {
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
+  .what-we-do {
+    h2 {
+      display: block;
+    }
+  }
   .what-we-do__images {
     display: flex;
     flex-direction: row;
