@@ -1,5 +1,6 @@
 .customers__h2 {
   margin-top: 94px;
+  display: none;
 }
 
 .customers__icon {
@@ -13,7 +14,7 @@
 .customers__icon-rectangle {
   width: 210px;
   height: 92px;
-
+  display: none;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -45,25 +46,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
   }
-
+  .customers__h2 {
+    margin-top: 94px;
+    display: block;
+  }
   .customers__icon-rectangle {
+    width: 226px;
     height: 92px;
     margin-bottom: 20px;
-    width: fit-content;
+    display: block;
   }
 }
 
-@media screen and (min-width: #{$desktop-breakpoint}) {
+@media screen and (min-width: $desktop-breakpoint) {
   .customers__icon {
     flex-direction: row;
   }
-}
-.customers__icon-rectangle {
-  width: 170px;
-  height: 92px;
 
-  margin-bottom: 94px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  .customers__icon-rectangle {
+    width: 170px;
+    height: 92px;
+
+    margin-bottom: 94px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
 }

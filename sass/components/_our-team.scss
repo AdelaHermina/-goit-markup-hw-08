@@ -28,15 +28,17 @@
 
   text-align: center;
 }
-@media screen and (min-width: #{$tablet-breakpoint}) {
-  .our-team__border {
-    margin-right: 30px;
-  }
+@media screen and (min-width: $tablet-breakpoint) {
   .our-team__list {
-    li + li {
-      margin-left: 30px;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
   }
+}
+
+.our-team__border--align {
+  margin-bottom: 60px;
 }
 .our-team__name {
   font-weight: 500;
@@ -60,7 +62,7 @@
   display: flex;
   text-align: center;
   align-items: end;
-  padding-left: 65px;
+
   margin: 16px 44px 30px 44px;
 
   .icon-social {
@@ -99,21 +101,12 @@
   justify-content: center;
   height: 44px;
   width: 44px;
+}
+svg {
+  height: 20px;
+  width: 20px;
+}
 
-  svg {
-    height: 20px;
-    width: 20px;
-  }
-}
-@media screen and (min-width: #{$tablet-breakpoint}) {
-  .our-team__list {
-    flex-direction: row;
-    gap: 0;
-  }
-  .our-team__icons {
-    padding-left: 0;
-  }
-}
 @media screen and (min-width: #{$tablet-breakpoint}) {
   .our-team {
     h2 {
