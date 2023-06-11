@@ -45,6 +45,7 @@
   display: none;
   &.is-open {
     display: flex;
+    align-items: end;
     position: fixed;
     height: 100%;
     top: 0;
@@ -71,9 +72,10 @@
   letter-spacing: 0.02em;
   margin-bottom: 274px;
 }
-.header-container li:not(:last-child) {
-  margin-bottom: 32px;
+.header-container li:nth-child(3) {
+  margin-bottom: 242px;
 }
+
 .global-header__nav-bar {
   position: relative;
   color: #212121;
@@ -86,7 +88,9 @@
   }
 }
 .global-header__modal--link {
-  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-top: 60px;
+  margin-left: -10px;
 }
 .global-header__modal--link a {
   color: #2196f3;
@@ -95,6 +99,22 @@
   color: rgba(33, 33, 33, 0.2);
   width: 22px;
   height: 0px;
+}
+.global-header__mail {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.global-header__mail-mail {
+  color: #757575;
+  margin-top: 32px;
+}
+.global-header__mail-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
 }
 /* Stiluri pentru tableta */
 
@@ -169,7 +189,13 @@
       transition: var(--transition);
     }
   }
-
+  .global-header__mail-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
   .global-header__tel {
     margin-top: 32px;
     margin-left: -215px;
@@ -178,6 +204,7 @@
   }
   .global-header__mail {
     color: #757575;
+    display: flex;
   }
 
   .global-header__mail:focus,
