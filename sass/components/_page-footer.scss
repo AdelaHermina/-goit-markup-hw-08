@@ -84,11 +84,42 @@
 }
 
 @media screen and (min-width: #{$tablet-breakpoint}) {
+  .find-subscribe {
+    margin-left: -1200px;
+  }
+  .footer-text {
+    margin-top: -150px;
+  }
   .global-footer {
     height: 464px;
     &__h3 {
       flex-direction: row;
+      span {
+        margin-left: 115px;
+      }
     }
+    &__find-us {
+      margin-left: 234px;
+    }
+  }
+  .form-footer__icon {
+    margin-top: -325px;
+    margin-left: -150px;
+  }
+  .global-footer__button {
+    display: flex;
+    margin-left: -1000px;
+    flex-direction: column;
+    margin-top: 196px;
+  }
+  .find-us--on {
+    margin-top: -410px;
+  }
+  .form-footer__align {
+    margin-left: 76px;
+    margin-top: -50px;
+    white-space: nowrap;
+    text-align: center;
   }
 }
 @media screen and (min-width: #{$desktop-breakpoint}) {

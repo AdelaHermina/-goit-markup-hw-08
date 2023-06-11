@@ -177,9 +177,14 @@
     margin-left: -215px;
     white-space: nowrap;
     display: flex;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .global-header__mail {
     color: #757575;
+    margin-top: 8px;
   }
 
   .global-header__mail:focus,

@@ -41,7 +41,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin-left: 12px;
+  margin-left: 72px;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -110,11 +110,18 @@
 }
 .button--toggle-menu {
   position: absolute;
-  right: 33px;
+  top: 22px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   padding: 0;
-  width: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
   border: none;
-  color: #212121;
+  border-radius: 50%;
+  outline: none;
 }
 .button--close-menu {
   align-self: flex-end;
@@ -127,6 +134,12 @@
 }
 @media screen and (min-width: #{$tablet-breakpoint}) {
   .button--close-menu {
+    display: none;
+  }
+  .footer-button {
+    margin-left: 150px;
+  }
+  .button--toggle-menu {
     display: none;
   }
 }
