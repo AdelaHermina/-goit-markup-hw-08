@@ -17,7 +17,10 @@
           ><span>Studio</span>
         </div>
 
-        <nav class="global-header header-links">
+        <nav class="global-header header-links js-menu-container">
+          <button class="js-close-menu button button--close-menu">
+            &times;
+          </button>
           <ul class="header-container">
             <li>
               <a
@@ -35,7 +38,10 @@
               <a class="global-header__nav-bar" href="contact.html">Contacts</a>
             </li>
             <li>
-              <a class="global-header__mail" href="mailto:info@devstudio.com">
+              <a
+                class="global-header__mail global-header__mail--align"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="global-header__icons global-header__icons--mail">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -51,6 +57,18 @@
               </a>
             </li>
           </ul>
+          <div class="global-header__modal--link">
+            <a href="https://instagram.com"
+              >Instagram <span class="vertical-bar"> |</span></a
+            >
+            <a href="https://twitter.com"
+              >Twitter <span class="vertical-bar"> |</span></a
+            >
+            <a href="https://facebook.com"
+              >Facebook <span class="vertical-bar"> |</span></a
+            >
+            <a href="https://linkedin.com">LinkedIn</a>
+          </div>
         </nav>
         <button
           class="js-open-menu button button--toggle-menu"
